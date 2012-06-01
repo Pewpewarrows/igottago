@@ -1,0 +1,5 @@
+Click to add tracks...
+<% collection.each(function(p) { %> 
+  <div class='footprint <%= p.get('foot') %>' style="left: <%= p.get('xpos') %>; top: <%= p.get('ypos') %>">
+  </div>
+<% }); %>

@@ -1,0 +1,250 @@
+/*  (c) 2012 Cole Krumbholz, SendSpree Inc.
+//
+//  This document may be used and distributed in accordance with 
+//  the MIT license. You may obtain a copy of the license at 
+//    http://www.opensource.org/licenses/mit-license.php
+*/
+
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,900,300italic,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic);
+
+/* #Site Styles
+================================================== */
+
+body {
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    word-spacing: 0em;
+    line-height: 21px;
+    background-image: url(/public/app/images/graphpaper.jpg);
+    background-repeat: repeat;
+    color: #555;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Links */
+
+a {  color: #449;  font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  text-decoration: none; }
+a:visited {  color: #77A; }
+a:focus {  outline: none; }
+a:hover, a:active {  outline: 0;  text-decoration: none; color: #f83e3f; }
+
+a {
+    transition: .4s all ease-in-out;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+}
+
+h1 a, h2 a, h3 a {
+    color: #222!important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    padding: 0;
+    font-weight:  700;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+    text-decoration: none;
+    color: #777!important;  
+}
+
+h1, h2, h3 {
+    color: #222;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight:  700;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+    margin: 20px 0 20px 0;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    color: #555;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 20px 0 10px 0;
+}
+
+
+h1.subtitle, h2.subtitle, h3.subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1.subtitle a, h2.subtitle a, h3.subtitle a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Basic alignment */
+.align-left{float: left;}
+.align-center{text-align: center;}
+.align-right{float: right}
+
+img.align-left{float: left; margin: 0 15px 0px 0;}
+img.align-center{text-align: center; clear: both; margin: 15px auto; display: block;}
+img.align-right{float: right; margin: 0 0 12px 15px;}
+img.inline-img{margin: 10px;}
+
+.block {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
+    -moz-box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
+    -webkit-box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;      
+    border: 1px solid #e1e1e1;
+}
+
+.tric {
+    position: absolute;
+    bottom: -6px;
+    left: 5px;
+}
+
+.terminal {
+    padding: 8px 20px 8px 20px;
+    color: #333;
+    /*border: none;*/
+    border-color: #CCC;
+    background-color: #DDD;
+}
+
+code.terminal {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#tracks-container {
+    width: 915px; 
+    height: 200px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;      
+}
+
+.replace-me {
+    padding: 30px 20% 30px 20%;
+    width: 60%;
+    text-align: center;
+}
+
+.replace-me h1 {
+    color: #999;
+}
+
+.tracksview {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+}
+
+.footprint {
+    position: absolute; 
+    width: 50px; 
+    height: 65px;   
+}
+
+.footprint.left {
+    background-image: url('/public/app/images/leftprint.png');
+}
+
+.footprint.right {
+    background-image: url('/public/app/images/rightprint.png');
+}
+
+/* ======================================================= */
+/* FOOTER */
+/* ======================================================= */   
+
+#section-footer {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #DDD;
+}
+
+#footer {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+#footer p, #footer h1, #footer h2, #footer h3 {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5); 
+}
+
+
+#footer pre {
+    box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
+}
+
+.title-footer  {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+    color: #fff;
+}
+    
+#section-footer-copy {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #53555a;
+}
+
+
+#footer-copy {
+    min-height: 75px;
+    height: 35px;
+    margin-top: 30px;
+    
+}
+
+#section-footer h4 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: #EEE;
+    font-size: 13px;
+}
+
+
+
